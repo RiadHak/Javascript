@@ -1,0 +1,23 @@
+#container{
+    padding: 10px;
+    padding-left: 15px;
+    border-radius: 10px;
+
+    background-color: gray;
+    width: 500px;
+    height:500px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+
+}
+#container button{
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+}
+.parent{
+    margin-left: 500px;
+    width: 500px;
+    height: 500px;
+    
+}
