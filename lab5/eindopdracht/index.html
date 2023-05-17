@@ -13,15 +13,37 @@
     <div class="dropdown">
         <button onclick="myFunction()" class="dropbtn">Dropdown</button>
         <div id="myDropdown" class="dropdown-content">
-            <a href="#home" onclick="home()">Home</a>
-            <a href="#about" onclick="genre_sort('FPS')">FPS</a>
-            <a href="#contact" onclick="genre_sort('RPG')">rgp</a>
-        </div>
-    </div>
-    <div>
+            <a href="#" onclick="home()">Alles</a>
+            <a href="#" onclick="genre_sort('FPS')">FPS</a>
+            <a href="#" onclick="genre_sort('RPG')">RPG</a>
+            <a href="#" onclick="genre_sort('Action')">Action</a>
+            <a href="#" onclick="genre_sort('MOBA')">MOBA</a>
+            <a href="#" onclick="genre_sort('Simulation')">Simulation</a>            
+            <a href="#" onclick="genre_sort('Looter-shooter')">Looter-shooter</a>
+            <a href="#" onclick="genre_sort('Sport')">Sport</a>
+            <a href="#" onclick="genre_sort('Sandbox')">Sandbox</a>
 
-       <p  id="output"></p> 
+            
+            <a href="#contact" onclick="cart()">Cart</a>
+        </div>
+        <label>prijs filter</label>
+        <input name="prijs" id="prijs">
+        <input name="prijs" id="prijs" type="submit" onclick="prijs_filter()">        
+        
+        <label>rating filter</label>
+        <input name="rating" id="rating">
+        <input name="rating" id="rating" type="submit" onclick="rating_filter()">
     </div>
+<div class="main_container">
+    <div id="output_container" class="output" >
+        <p id="output"></p>
+    </div>
+    <div class="cart_container">
+        <p id="carOutPut"></p>
+        <h3 id="totaal"></h3>
+    </div>
+</div>
+
 </div>
 
 </body>

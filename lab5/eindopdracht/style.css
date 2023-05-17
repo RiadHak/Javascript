@@ -36,3 +36,30 @@
   .dropdown a:hover {background-color: #ddd;}
   
   .show {display: block;}
+
+
+#output{
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.output item{
+    background-color: red;
+}
+.sub_button{
+    position:relative;
+    
+}
+
+.main_container{
+    border:2px solid black ;
+    height: 1800;
+    width: 1000px;
+}
+
+.cart div{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+}
