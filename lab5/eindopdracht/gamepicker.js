@@ -3,7 +3,7 @@ var container = document.getElementById('output');
 var items = [];
 function home(){
     items =[];
-    document.getElementById('output').innerHTML="<br>";
+    clear_output();
     fetch('games.json')
    .then(response => response.json())
    .then(data => {
@@ -36,8 +36,8 @@ function home(){
 
 
  function genre_sort(naam){
+    clear_output();
     items = [];
-    document.getElementById('output').innerHTML="<br>";
     fetch('games.json')
     .then(response => response.json())
     .then(data => {
@@ -75,6 +75,7 @@ function home(){
  }
  
 function prijs_filter(){
+    clear_output();
     items = [];
     var inp = document.getElementById('prijs');
     console.log(inp);
@@ -105,12 +106,13 @@ function prijs_filter(){
 }
 
 function rating_filter(){
+    clear_output();
     items = [];
+
     var inp = document.getElementById('rating');
     console.log(inp);
 
     document.getElementById('output').innerHTML="<br>";
-    alert("item/s added to u cart");
     fetch('games.json')
     .then(response => response.json())
     .then(data => {
@@ -139,8 +141,7 @@ function rating_filter(){
 
 
 function cart(){
-    document.getElementById('carOutPut').innerHTML="<br>";
-    document.getElementById('output').innerHTML="<br>";
+    clear_output();
     var CheckB = document.getElementById('messageCheckbox');
     var total = 0;
     console.log(CheckB)
@@ -162,7 +163,11 @@ function cart(){
 // home();
 
 
-
+function clear_output(){
+    document.getElementById('carOutPut').innerHTML="<br>";
+    document.getElementById('output').innerHTML="<br>";
+    document.getElementById('totaal').innerHTML="<br>";
+}
 
 
 
